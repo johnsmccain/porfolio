@@ -16,7 +16,7 @@ export const product = [
   {
     id: 3,
     img: quiz,
-    link: "https://61a1a959bcaeb60008567cbc--millionairesgame.netlify.app/",
+    link: "https://millionairesgame.netlify.app/",
   },
   //   {
   //     id: 4,

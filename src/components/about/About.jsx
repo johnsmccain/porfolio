@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import "./about.css";
 import me from "../../img/me.jpg";
 
-import pic3 from "../../img/CSS_certificate.jpg";
 import { ThemeContext } from "../../contex";
 export default function About() {
   const theme = useContext(ThemeContext);
@@ -31,16 +30,64 @@ export default function About() {
           My interest in web development started in 2021. I went all in learning
           with free tools online, then later joined an organized front end web
           development program/cohort in the city where I live. Worth mentioning
-          that my career mentor, Monte Thomas played a major role in seeing that
-          I develope the best soft/hard skill for the coming wave.
+          that my career mentor,
+          <a
+            href="https://twitter.com/ThomasGreat3?t=V_7X13BZGhwkGFRleBR8BA&s=09"
+            className="links"
+          >
+            <strong>
+              {" "}
+              <i>Monte Thomas </i>
+            </strong>
+          </a>
+          played a major role in seeing that I develope the best soft/hard skill
+          for the coming wave.
         </p>
         <div className="a-award">
-          <img src={pic3} alt="award-pics" className="a-award-img" />
           <div className="a-award-texts">
-            <h4 className="a-award-title">
-              Here are a few technologies I’ve been working with :
-            </h4>
-            <p className="a-lead">JavaScript (ES6+) React and Node.js</p>
+            <h4 className="a-award-title">Certificates :</h4>
+            <ul className="a-lead-list">
+              <li className="a-lead">
+                {" "}
+                <a
+                  className="a-link"
+                  href="https://www.udemy.com/certificate/UC-9718a38d-c7b0-4085-bd65-7cc215959658/"
+                >
+                  Front End Web Development
+                </a>{" "}
+              </li>
+              <li className="a-lead">
+                {" "}
+                <a
+                  className="a-link"
+                  href="https://www.sololearn.com/Certificate/1097-10142238/jpg
+"
+                >
+                  REACT{" "}
+                </a>{" "}
+              </li>
+              <li className="a-lead">
+                {" "}
+                <a
+                  className="a-link"
+                  href="https://www.udemy.com/certificate/UC-be4f7575-0d24-483c-a4cd-1c152a9a8c73/
+"
+                >
+                  JAVASCRIPT, HTML5, CSS3{" "}
+                </a>{" "}
+              </li>
+              <li className="a-lead">
+                {" "}
+                <a
+                  className="a-link"
+                  href="https://www.udemy.com/certificate/UC-826525d2-993d-4dfa-b949-b30ca625281c/
+"
+                >
+                  {" "}
+                  MERN Stack
+                </a>{" "}
+              </li>
+            </ul>
           </div>
         </div>
       </div>

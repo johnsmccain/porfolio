@@ -152,6 +152,9 @@
   .img {
     margin: auto;
   }
+  .i-img:hover {
+    transform: scale(1.1);
+  }
   .i-name {
     font-size: 40px;
     padding: 10px 0;

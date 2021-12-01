@@ -6,6 +6,7 @@ import email from "../../img/email.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../contex";
+import { LinkedIn, GitHub, Facebook } from "@mui/icons-material";
 export default function Contact() {
   const theme = useContext(ThemeContext);
   const dark = theme.state.darkMode;
@@ -75,10 +76,36 @@ export default function Contact() {
               No.33,New Buwaya, Abuja Express Way, Kaduna State, Nigeria.
             </span>
           </div>
+          <ul className="socials">
+            <li className="social">
+              <a
+                href="https://github.com/johnsmccain
+"
+              >
+                <GitHub className="c-social-icon" />{" "}
+                <span className="link-text">GitHub</span>
+              </a>
+            </li>
+            <li className="social">
+              <a href="https://web.facebook.com/jone.danlami.5/">
+                <Facebook fontSize="medium" className="c-social-icon" />
+                <span className="link-text">Facebook</span>
+              </a>
+            </li>
+            <li className="social">
+              <a
+                href="https://www.linkedin.com/in/john-danlami-b5a745154
+"
+              >
+                <LinkedIn className="c-social-icon" />
+                <span className="link-text">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What is your story</b> wannna got in touch or collabrate?
+            <b>What is your story</b> wannna get in touch or collabrate?
           </p>
           <form
             ref={formRef}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./intro.css";
-import me from "../../img/me.jpg";
+import me from "../../img/Johnsdanlami.JPG";
 export default function Intro() {
   return (
     <div className="i">

@@ -2,6 +2,7 @@ import resume from "./img/resume.png";
 import landing from "./img/landing.png";
 import quiz from "./img/quiz.png";
 import netflix from "./img/netflix-clone.png";
+import zuri from "./img/zuri.png";
 
 export const product = [
   {
@@ -24,9 +25,9 @@ export const product = [
     img: netflix,
     link: "https://netflix-repl.netlify.app",
   },
-  //   {
-  //     id: 5,
-  //     img: long5,
-  //     link: "ahjabajs",
-  //   },
+  {
+    id: 5,
+    img: zuri,
+    link: "http://music.zuri.chat/music",
+  },
 ];

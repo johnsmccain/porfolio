@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import {Toaster} from "react-hot-toast"
 import './App.css'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
@@ -7,7 +9,6 @@ import Experience from "./components/Experience";
 import Education from './components/Education'
 import Contacts from './components/Contacts'
 import styled from "styled-components";
-import { useState } from 'react'
 import Footer from './components/Footer'
 import {AnimatePresence} from "framer-motion"
 import ProjectDetails from './components/Dialog/ProjectDetails'
@@ -19,7 +20,7 @@ function App() {
     <main>
       <NavBar />
       <Body>
-<AnimatePresence>
+
 
       <div >
         <Home />
@@ -41,9 +42,10 @@ function App() {
          />
          )}
         </div>
-         </AnimatePresence>
+
       </Body>
       {/* <Skills /> */}
+      <Toaster/>
     </main>
   );
 }

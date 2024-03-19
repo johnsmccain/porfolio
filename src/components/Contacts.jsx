@@ -1,6 +1,8 @@
 // import React, { useState, useRef } from 'react'
 // import CustomHook from './CustomHook';
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 // function Contacts() {
 // const [listContacts] = useState([
 //   {
@@ -52,8 +54,60 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack, BsWhatsapp } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { WhatsApp } from "@mui/icons-material";
+import { useState } from "react";
 
 const Footer = () => {
+
+//  const form = useRef();
+  const [name, setname] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_dwukfsr";
+    const templateId = "template_ujxp5sn";
+    const publicKey = "user_dGg7G0iKobFpP0TjmdwTZ";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_name: "My portfolio",
+    }
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      toast.success('Email sent successfully!');
+      setname("")
+      setEmail("")
+      setMessage("")
+
+    }).catch((err) => {
+      console.log('FAILED...', err);
+      toast.error(`Something went wrong! ${err.text}`);
+    })
+// console.log(form.current)
+    // emailjs
+    //   .sendForm('service_vmax2fw', 'template_ujxp5sn', form.current, {
+    //     publicKey: 'user_dGg7G0iKobFpP0TjmdwTZ',
+    //   })
+    //   .then(
+    //     () => {
+    //       // console.log('SUCCESS!');
+    //       toast.success('Email sent successfully!');
+    //       console.log('Email sent successfully!');
+    //       // form.current.reset();
+    //       // scrollUp();
+    //     },
+    //     (error) => {
+    //       console.log('FAILED...', error.text);
+    //       toast.error(`Something went wrong! ${error.text}`);
+
+    //     },
+    //   );
+  };
   const scrollUp = () => {
     window.scroll({
       top: 0,
@@ -77,7 +131,7 @@ const Footer = () => {
         <div className="links">
           <Slide direction="left">
             <h1>Contact me directly:</h1>
-          </Slide>
+          </Slide>j
           <div>
             <span>
               <FiPhoneCall />
@@ -94,6 +148,16 @@ const Footer = () => {
             </Slide>
             <Slide>
               <a href="mailto:johnsdanlami@gmail.com">johnsdanlami@gmail.com</a>
+            </Slide>
+          </div>
+          <div>
+            <Slide direction="left">
+              <span>
+                <WhatsApp/>
+              </span>
+            </Slide>
+            <Slide>
+              <a href="mailto:johnsdanlami@gmail.com">+234 808 4126 907</a>
             </Slide>
           </div>
         </div>
@@ -140,26 +204,28 @@ const Footer = () => {
       </Profile>
       <Form>
         <Slide direction="right">
-          <form>
+          <form
+          // ref={form}
+          onSubmit={sendEmail}>
             <div className="name">
               <span>
                 <CgProfile />
               </span>
-              <input type="text" placeholder="Fullname..." />
+              <input type="text" placeholder="Fullname..." name="user_name" value={name} onChange={(e)=> setname(e.target.value)}/>
             </div>
             <div className="email">
               <span>
                 <MdAlternateEmail />
               </span>
-              <input type="email" placeholder="Email..." />
+              <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="Email..."  name="user_email"/>
             </div>
             <div className="message">
               <span className="messageIcon">
                 <FiMail />
               </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+              <textarea cols="30" rows="10" placeholder="Message..." value={message} onChange={(e)=> setMessage(e.target.value)} name="message"></textarea>
             </div>
-            <SubmitButton>Submit</SubmitButton>
+            <SubmitButton type="submit">Submit</SubmitButton>
           </form>
         </Slide>
       </Form>

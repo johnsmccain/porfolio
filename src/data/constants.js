@@ -11,6 +11,7 @@ import movix from "../assets/movix.png"
 import airbnb from "../assets/airbnbconsole.png"
 import artgrams from "../assets/artgrams.png"
 import qruse from "../assets/qruse.png"
+import resume from "../assets/John's_Resume.pdf"
 export const Bio = {
   name: "John Danlami",
   roles: [
@@ -21,8 +22,7 @@ export const Bio = {
   description:
     "Experienced web developer from Nigeria, skilled in both front-end and backend-end technologies. Holds certiﬁcations in software engineering and full-stack software development. Eager for new challenges and excited about contributing to team success.",
   github: "https://github.com/johnsmccain",
-  resume:
-    "../../public/John's_Resume.pdf",
+  resume,
   linkedin: "https://www.linkedin.com/in/johnsdanlami/",
   twitter: "https://twitter.com/johnsdanlami",
   insta: "https://www.instagram.com/johnsmccain/",

@@ -296,7 +296,7 @@ export const experiences = [
   {
     id: 1,
     img: "https://bloshtech.com/static/media/logo.54f38033805450dbd906.png",
-    role: "Full Stack Developer",
+    role: "Frontend Developer",
     company: "Bloshtech",
     date: "Aug 2021 - aug 2021",
     // desc: "Built LMS Platforms using Next Js integrated GraphQL with AXIOS, created High level Design and Figma design. Built Backend with GraphQL and Node JS and connected with MongoDb.",

@@ -630,7 +630,7 @@ export const projects = [
     title: "Starknet.ID",
     date: "2025",
     description: "Starknet.ID is an identity provider on Starknet. The protocol allows you to create your Starknet Identity (that can be seen as your on-chain passport) and to attach things to it. You can already you can register .stark human-readable domains that will be used as your Starknet username.",
-    image: "https://starknet.id/_next/image?url=%2Fvisuals%2Fhome%2Ffooter-icon.webp&w=48&q=75",
+    image: "https://starknet.id/visuals/home/headerImage.webp",
     tags: ["Next Js",, "tailwind", "API"],
     category: "web app",
     github: "https://github.com/lfglabs-dev/starknet.id",

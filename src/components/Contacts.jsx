@@ -131,7 +131,7 @@ const Footer = () => {
         <div className="links">
           <Slide direction="left">
             <h1>Contact me directly:</h1>
-          </Slide>j
+          </Slide>
           <div>
             <span>
               <FiPhoneCall />

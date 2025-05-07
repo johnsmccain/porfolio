@@ -1,33 +1,39 @@
-import netlix from "../assets/netflex.png"
-import artgram from "../assets/artgram.png"
-import alxse from "../assets/alxse.png"
-import canvas from "../assets/canvas.png"
-import coffee from "../assets/coffee.png"
-import mobilelanding from "../assets/Mobile landing page.png"
-import space from "../assets/space.png"
-import udfs from "../assets/udsf.png"
-import work from "../assets/work.png"
-import movix from "../assets/movix.png"
-import airbnb from "../assets/airbnbconsole.png"
-import artgrams from "../assets/artgrams.png"
-import qruse from "../assets/qruse.png"
-import resume from "../assets/John's_Resume.pdf"
+import netlix from "../assets/netflex.png";
+// import artgram from "../assets/artgram.png";
+import alxse from "../assets/alxse.png";
+import canvas from "../assets/canvas.png";
+import coffee from "../assets/coffee.png";
+// import mobilelanding from "../assets/Mobile landing page.png";
+// import space from "../assets/space.png";
+import udfs from "../assets/udsf.png";
+// import work from "../assets/work.png";
+import movix from "../assets/movix.png";
+import airbnb from "../assets/airbnbconsole.png";
+import artgrams from "../assets/artgrams.png";
+import qruse from "../assets/qruse.png";
+import resume from "../assets/John's_Resume.pdf";
+import byforx from "../assets/byforex.png";
+import bitland from "../assets/bitland.png";
+import node from "../assets/node.png";
 export const Bio = {
   name: "John Danlami",
   roles: [
     "Full Stack Developer",
-    "Android Developer",
-    "Programmer",
+    "Smart Contract Developer",
+    "Frontend Developer",
+    "Node Operator",
   ],
   description:
-    "Experienced web developer from Nigeria, skilled in both front-end and backend-end technologies. Holds certiﬁcations in software engineering and full-stack software development. Eager for new challenges and excited about contributing to team success.",
+    "Experienced full-stack web and smart contract developer from Nigeria, with a strong background in frontend technologies like React and backend systems using Node.js. Skilled in Web3 development, blockchain integration, and modern tooling. Holds certifications in software engineering and full-stack development. Also operates Ethereum nodes using Besu and Teku, contributing to blockchain network stability and decentralization. Eager to tackle new challenges and contribute to impactful, innovative teams.",
   github: "https://github.com/johnsmccain",
   resume,
   linkedin: "https://www.linkedin.com/in/johnsdanlami/",
-  twitter: "https://twitter.com/johnsdanlami",
+  twitter: "https://x.com/johnsdanlami",
   insta: "https://www.instagram.com/johnsmccain/",
+  telegram: "https://t.me/johnsdanlami",
   facebook: "https://www.facebook.com/johnsdanlami/",
 };
+
 
 export const skills = [
   {
@@ -69,11 +75,10 @@ export const skills = [
           "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
       },
       {
-        name: "Material UI",
+        name: "Tailwind CSS",
         image:
-          "data:image/png;base64,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",
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
-
     ],
   },
   {
@@ -168,35 +173,52 @@ export const skills = [
     ],
   },
   {
-    title: "Android",
+    title: "Blockchain",
     skills: [
       {
-        name: "React Native",
+        name: "Solidity",
         image:
-         "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+          "https://imgs.search.brave.com/8d5KJn4uYrBNKn5P-0FxjxMAghB5U5GP7eftBr_Qzks/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk4L1Nv/bGlkaXR5X2xvZ28u/c3ZnLzY0MHB4LVNv/bGlkaXR5X2xvZ28u/c3ZnLnBuZw",
       },
-      // {
-      //   name: "Kotlin",
-      //   image:
-      //     "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
-      // },
-      // {
-      //   name: "Jetpack Compose",
-      //   image:
-      //     "https://3.bp.blogspot.com/-VVp3WvJvl84/X0Vu6EjYqDI/AAAAAAAAPjU/ZOMKiUlgfg8ok8DY8Hc-ocOvGdB0z86AgCLcBGAsYHQ/s1600/jetpack%2Bcompose%2Bicon_RGB.png",
-      // },
-      // {
-      //   name: "XML",
-      //   image:
-      //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
-      // },
       {
-        name: "Android Studio",
+        name: "Ethereum",
         image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+          "https://imgs.search.brave.com/heF0r9E3LP-qQfb8qbo25oQhimSV4J640ANCnqH2GYw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdGVlcHVibGlj/L2ltYWdlL3ByaXZh/dGUvcy0tQnFYemY2/VHItLS90X1ByZXZp/ZXcvYl9yZ2I6MjYy/YzNhLGNfbGltaXQs/Zl9hdXRvLGhfNjMw/LHFfYXV0bzpnb29k/OjQyMCx3XzYzMC92/MTQ3MDgyMzA2OS9w/cm9kdWN0aW9uL2Rl/c2lnbnMvNjI1NzIz/XzEuanBn",
       },
+      {
+        name: "Hardhat",
+        image:
+          "https://hardhat.org/favicon.ico",
+      },
+      {
+        name: "Viem",
+        image:
+          "https://imgs.search.brave.com/Ofj_8NJ4p8Npqn4T40XK8pzGgZEHZlEkTKhnNRSvxOQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2FmZDcyMGI3/OWVlMmQ2OWMxYWM1/MGZjNGRhM2M4OWQ2/NTA3YjRjNGMxMDcy/MzNiNTBjOGVmZmMz/YTE2NGE0Ni92aWVt/LnNoLw",
+      },
+      {
+        name: "Foundry",
+        image:
+          "https://imgs.search.brave.com/DJo40T-IyoTm6P_Q2cGwpP_QMt_eZ3R-SonY6n091VI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nZXRm/b3VuZHJ5LnNoL2xv/Z28ucG5n",
+      },
+      {
+        name: "Metamask",
+        image:
+          "https://imgs.search.brave.com/8-89d2hogyhm0gGhwWXymlNsV4zBl0cK8fhzIs1NalQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2tldGNoYXBwc291/cmNlcy5jb20vcmVz/b3VyY2VzL3NvdXJj/ZS1pbWFnZS9tZXRh/bWFzay1mb3gtbG9n/by5wbmc",
+      },
+      {
+        name: "Wagmi",
+        image:
+          "https://imgs.search.brave.com/5Lix9TYye-ZZBuaJH2gHGWDLtKtkfpcINbDpe76pCtc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzE3Mzk0ZTdk/OTNkOGM1ZTRjMzli/YTI1OTc2YWIyOTlj/OWUzN2JkYzMwNGY3/NzJiNjVmZGYxNmY0/OTYyYjE1Zi93YWdt/aS5zaC8",
+      },
+      {
+        name: "Ethers Js",
+        image:
+          "https://imgs.search.brave.com/OhJ0zzZhf7RjrsVYPtpxCCgnWKj6siCWtx8_z8mdPYU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZkMmU5Zjk0/YjFjNjA3YTkwZTY3/ZmM3YWEzNTZjYWQy/MTMwMzFiYzNiZGFh/YTE3MjkzODgxNGI2/ZmYwMzI2Zi9kb2Nz/LmV0aGVycy5vcmcv",
+      },
+      
     ],
   },
+
   // {
   //   title: "Machine Learning",
   //   skills: [
@@ -300,15 +322,14 @@ export const experiences = [
     company: "Bloshtech",
     date: "Aug 2021 - aug 2021",
     // desc: "Built LMS Platforms using Next Js integrated GraphQL with AXIOS, created High level Design and Figma design. Built Backend with GraphQL and Node JS and connected with MongoDb.",
-    desc:"Built a landing page using Reactjs",
+    desc: "Built a landing page using Reactjs",
     skills: [
-
-//       "prisma",
-//       "AWS",
-//       "EC2",
-//       'stripe',
-// "axios",
-//       "tailwindcss",
+      //       "prisma",
+      //       "AWS",
+      //       "EC2",
+      //       'stripe',
+      // "axios",
+      //       "tailwindcss",
       "JavaScript",
       "TypeScript",
       // "Node Js",
@@ -323,58 +344,46 @@ export const experiences = [
     company: "Qruse",
     date: "Jul 2023",
     desc: "Built a waitlist web App, using Next Js and TypeScript integrating MongoDB. Created Low Level Design and converted Figma design to actual code.",
+    skills: ["Next Js", "TypeScript", "MongoDB", "TailWindcss"],
+    doc: "",
+  },
+  {
+    id: 3,
+    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+    role: "Frontend Engineer",
+    company: "Peeriva",
+    date: "December 2024 - March 2025",
+    desc: "Developed a LinkedIn-like frontend platform with elements inspired by X.com to create a social-educational space for colleges and universities. Implemented features using React, Redux, TanStack Query, and TypeScript. Integrated AWS Amplify, Cognito for authentication, and pre-signed URLs for secure file uploads. Used Tailwind CSS for styling and Postman for API testing.",
     skills: [
-      "Next Js",
+      "React",
+      "Redux",
+      "TanStack Query",
+      "AWS Amplify",
+      "Cognito",
       "TypeScript",
-      "MongoDB",
-      "TailWindcss",
+      "AWS Pre-signed URL",
+      "Tailwind CSS",
+      "Postman",
     ],
     doc: "",
   },
-  // {
-  //   id: 3,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-  //   role: "Fullstack Externship",
-  //   company: "Flipr",
-  //   date: "June 2023 - July 2023",
-  //   desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-  //   skills: [
-  //     "NextJS",
-  //     "Redux",
-  //     "NodeJs",
-  //     "prisma",
-  //     "stripe",
-  //     "CSS",
-  //     "JavaScript",
-  //     "tailwindcss",
-  //     "AWS",
-  //     "MongoDB",
-  //   ],
-  //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
-  // },
-  // {
-  //   id: 4,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-  //   role: "Android Developer",
-  //   company: "DSC KIIT",
-  //   date: "Nov2021 - Present",
-  //   desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-  //   skills: [
-  //     "Leadership",
-  //     "Mobile Application Development",
-  //     "Kotlin",
-  //     "XML",
-  //     "Figma",
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-  //   role: "Open Source Contributor ",
-  //   company: "GirlScript Summer of Code",
-  //   date: "May 2023 - Present",
-  //   desc: "Contributed to different open-source projects and learn from industry experts",
-  // },
+  {
+    id: 4,
+    img: "",
+    role: "Frontend Developer",
+    company: "Git Eth Open Source",
+    date: "November 2024 - January 2025",
+    desc: "Contributed to the development of an open-source project, focusing on frontend development using React and TypeScript. Collaborated with a team of developers to implement new features and improve existing functionality.",
+  },
+  {
+    id: 5,
+    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
+    role: "Frontend Engineer",
+    company: "Peak Class",
+    date: "2025 - Present",
+    desc: "An education platform for kids, teenagers, and adults that provides a safe and engaging learning environment.",
+    skills: ["Redux", "Nextjs", "tailwindcss", "typescript", "Figma"],
+  },
 ];
 
 export const education = [
@@ -386,7 +395,7 @@ export const education = [
     grade: "",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at University of the People, California. I have taken courses in Java and Python Programming",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
-    doc:""
+    doc: "",
   },
   {
     id: 1,
@@ -396,7 +405,7 @@ export const education = [
     grade: "88.2%",
     desc: "I completed my software engineering program at African Leading X, Remotely, where I studied Backend Software Engineering, I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the theRoom for Alx alumni community, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "ALX SE",
-    doc: alxse
+    doc: alxse,
   },
   {
     id: 2,
@@ -417,26 +426,18 @@ export const projects = [
     date: "Jul 2023 - sep 2023",
     description:
       "An art application that helps artists to create, save, and showcase the art they create. It provides a user-friendly interface for artists to upload, edit, and manage their artworks. Login credentials: email: test@gmail.com password: test1234",
-    image:
-      artgrams,
-    tags: [
-      "Next Js",
-      "MongoDB",
-      "Typescript",
-      "Next Auth",
-      "Redux",
-      "Recoil",
-    ],
+    image: artgrams,
+    tags: ["Next Js", "MongoDB", "Typescript", "Next Auth", "Redux", "Recoil"],
     category: "web app",
     github: "https://github.com/kingsleyocran/artgram_project",
     webapp: "https://artgram-project.vercel.app/",
-     member: [
+    member: [
       {
         name: "Kingsley Ocran ",
         img: "https://avatars.githubusercontent.com/u/42667957?v=4",
         linkedin: "",
         github: "https://github.com/kingsleyocran",
-        twitter:"https://twitter.com/kingsleyocran"
+        twitter: "https://twitter.com/kingsleyocran",
       },
 
       {
@@ -444,7 +445,7 @@ export const projects = [
         img: "https://avatars.githubusercontent.com/u/35366478?v=4",
         linkedin: Bio.linkedin,
         github: Bio.github,
-        twitter:Bio.twitter
+        twitter: Bio.twitter,
       },
     ],
   },
@@ -454,267 +455,196 @@ export const projects = [
     date: "2022",
     description:
       "The console of the AirBnB project at Holberton School collectively cover fundamental concepts of higher level programming. A command interpreter is created to manage objects for the AirBnB(HBnB) website.<h2>Functionalities of this command interpreter:</h2> Create a new object (ex: a new User or a new Place) Retrieve an object from a file, a database etc... Do operations on objects (count, compute stats, etc...). Update attributes of an object. Destroy an object",
-    image:
-      airbnb,
-    tags: [
-      "Python3",
-      "JSON",
-      "Linux",
-      "Flask",
+    image: airbnb,
+    tags: ["Python3", "JSON", "Linux", "Flask"],
 
-    ],
-
-     member: [
+    member: [
       {
         name: "Alexa Orrico",
         img: "https://avatars.githubusercontent.com/u/26891443?v=4",
         linkedin: "",
         github: "https://github.com/alexaorrico",
-        twitter:"https://twitter.com/alexa_orrico"
+        twitter: "https://twitter.com/alexa_orrico",
       },
       {
         name: Bio.name,
         img: "https://avatars.githubusercontent.com/u/35366478?v=4",
         linkedin: Bio.linkedin,
         github: Bio.github,
-        twitter:Bio.twitter
+        twitter: Bio.twitter,
       },
     ],
     category: "web app",
     github: "https://github.com/johnsmccain/AirBnB_clone_v4",
     webapp: "https://github.com/johnsmccain/AirBnB_clone_v4",
   },
-  // {
-  //   id: 0,
-  //   title: "System Engineering DevOps",
-  //   date: "2022",
-  //   description:
-  //     "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-  //   tags: ["Linux", "Git", "Python3", "Docker", "EC2", "Flask", "React Js", "API","Nginx" ],
-  //   category: "web app",
-  //   github: "https://github.com/johnsmccain/alx-system_engineering-devops",
-  //   webapp: "https://github.com/johnsmccain/alx-system_engineering-devops",
-  //    member: [
-  //     {
-  //       name: Bio.name,
-  //       img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-  //       linkedin: Bio.linkedin,
-  //       github: Bio.github,
-  //       twitter:Bio.twitter
-  //     },
-  //   ],
 
-  // },
-  {
-    id: 1,
-    title: "File Manager",
-    date: "sep 2022",
-    description:
-      `
- - Project is done in teams of 2 people (my team: John Danlami, Mercy Musa)
- - Project start Mar 2, 2023 6:00 AM, end by Mar 9, 2023 6:00 AM
-
-File Manager is a web application that allows users to upload and view files:
-User authentication via a token
-List all files
-Upload a new file
-Change permission of a file
-View a file
-Generate thumbnails for images
-`,
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
-    tags: [
-      "Back-end",
-"JavaScript",
-"ES6",
-"NoSQL",
-"MongoDB",
-"Redis",
-"NodeJS",
-"ExpressJS",
-"Kue"
-    ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
-     member: [
-      {
-        name: "Mercy Swanta",
-        img: "https://avatars.githubusercontent.com/u/99684074?v=4",
-        linkedin: "",
-        github: "https://github.com/mercyswan",
-        twitter:"https://twitter.com/swanmercy"
-      },
-      {
-        name: Bio.name,
-        img: "https://avatars.githubusercontent.com/u/35366478?v=4",
-        linkedin: Bio.linkedin,
-        github: Bio.github,
-        twitter:Bio.twitter
-      },
-    ],
-  },
-  // {
-  //   id: 2,
-  //   title: "Brain Tumor Detection",
-  //   date: "Jan 2023 - Mar 2023",
-  //   description:
-  //     "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-  //   image:
-  //     "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-  //   category: "machine learning",
-  //   github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-  //   webapp: "https://brain-tumor.netlify.app/",
-  //   member: [
-  //     {
-  //       name: "Rishav Chanda",
-  //       img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-  //       linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  //       github: "https://github.com/rishavchanda/",
-  //     },
-  //     {
-  //       name: "Upasana Chaudhuri",
-  //       img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-  //       linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-  //       github: "https://github.com/upasana0710",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   title: "Buckoid",
-  //   date: "Dec 2021 - Apr 2022",
-  //   description:
-  //     "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-  //   image:
-  //     "https://camo.githubusercontent.com/3ad28aa710d18525f1fc87de056ed53c706d09979589bfd5a773df36653bad38/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-  //   tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-  //   category: "android app",
-  //   github: "https://github.com/rishavchanda/Buckoid-Android-App",
-  //   webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
-  // },
-  // {
-  //   id: 10,
-  //   title: "Job Finding App",
-  //   date: "Jun 2023 - Jul 2023",
-  //   description:
-  //     "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-  //   tags: ["React Native", "JavaScript", "Axios"],
-  //   category: "android app",
-  //   github: "https://github.com/rishavchanda/Job-finder-App",
-  //   webapp: "https://github.com/rishavchanda/Job-finder-App",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Whatsapp Clone",
-  //   date: "Jul 2021",
-  //   description:
-  //     "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-  //   tags: ["React Js", "Firebase", "Firestore", "Node JS"],
-  //   category: "web app",
-  //   github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-  //   webapp: "https://whatsapp-clone-rishav.web.app",
-  // },
   {
     id: 5,
     title: "Movix",
     date: "Jun 2021",
     description:
-      " A Movie/TV Show Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular movie/TV shoew. It has a movie/TV show details.",
-    image:movix
-      ,
+      "A Movie/TV Show Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular movie/TV shoew. It has a movie/TV show details.",
+    image: movix,
     tags: ["React Js", "Axios", "Saas", "React-player", "API"],
     category: "web app",
     github: "https://github.com/johnsmccain/movix",
     webapp: "https://movix247.netlify.app/",
-     member: [
-
+    member: [
       {
         name: Bio.name,
         img: "https://avatars.githubusercontent.com/u/35366478?v=4",
         linkedin: Bio.linkedin,
         github: Bio.github,
-        twitter:Bio.twitter
+        twitter: Bio.twitter,
       },
     ],
   },
   {
     id: 6,
-    title: "Greeting Card",
-    date: "Jan 2023",
+    title: "FEENAX",
+    date: " 2025",
     description:
-      "A simple react app where a user selects from 4 random images to create a “thank you” card. To do this  a random image generator API is used to get the 4 images the users should pick from. Once they pick and enter their name the website should overlay the selected image with the user’s name and a “thank you” text. Their name should be imprinted on the bottom of the image and thank you should be on the top. This newly generated image is downloadable. The dimension(ratio) of this image is be 4:5. Here is an example of the generated image API: https://source.unsplash.com/random/300x300.",
-    image:
-      canvas,
-    tags: ["React Js", "API", "Axios", "TypeScript"],
+      "crypto dapp for investors and swappers to track their portfolio and stake tokens of profits on the platform. It is a decentralized application for crypto. It is built with React, Wagmi, and Tailwind CSS.",
+    image: "https://pt02.netlify.app/images/feenax.png",
+    tags: ["Next Js", "Wagmi"],
     category: "web app",
-    github: "https://github.com/johnsmccain/canvasApp",
-    webapp: "https://assetsment2700.netlify.app/",
-     member: [
-
+    github: "https://github.com/johnsmccain/pt2",
+    webapp: "https://pt02.netlify.app/",
+    member: [
       {
         name: Bio.name,
         img: "https://avatars.githubusercontent.com/u/35366478?v=4",
         linkedin: Bio.linkedin,
         github: Bio.github,
-        twitter:Bio.twitter
+        twitter: Bio.twitter,
+      },
+    ]
+  },
+  {
+    id: 12,
+    title: "Node Foge",
+    date: "2025",
+    description: "A market place for users to buy Node products . It is built with Node Js, Express, and MongoDB.",
+    image: node,
+    tags: ["React Js", "Node Js", "tailwind", "MongoDB", "Express", "API"],
+    category: "web app",
+    github: "",
+    webapp: "https://nodeforge.netlify.app/",
+    member: [
+      {
+        name: Bio.name,
+        img: "https://avatars.githubusercontent.com/u/35366478?v=4",
+        linkedin: Bio.linkedin,
+        github: Bio.github,
+        twitter: Bio.twitter,
+      },
+    ],
+  },
+
+  {
+    id: 13,
+    title: "By Forex",
+    date: "Dec 2024",
+    description:
+      "A crypto dapp for investors to track their portfolio and stake tokens of profits on the platform. It is a decentralized application for crypto. It is built with React, Wagmi, and Tailwind CSS.",
+    image: byforx,
+    tags: ["React", "Wagmi", "tailwind", "smart contract", "bnb"],
+    category: "web app",
+    github: "https://github.com/johnsmccain/byfx",
+    webapp: "https://byforex.xyz/",
+    member: [
+      {
+        name: Bio.name,
+        img: "https://avatars.githubusercontent.com/u/35366478?v=4",
+        linkedin: Bio.linkedin,
+        github: Bio.github,
+        twitter: Bio.twitter,
       },
     ],
   },
   {
-    id: 7,
-    title: "Coffee Shop landing page",
-    date: "Feb 2022",
+    id: 14,
+    title: "Bit Land",
+    date: "Dec 2024",
     description:
-      "A Coffee Shop landing page made with pure Html and CSS.",
-    image:
-      coffee,
-    tags: ["Html", "CSS"],
+      "A crypto dapp for investors to track their portfolio and stake tokens of profits on the platform. It is a decentralized application for crypto. It is built with React, Wagmi, and Tailwind CSS.",
+    image: "https://bitland1.netlify.app/assets/logo-i0POFZlN.png",
+    tags: ["Next Js", "Wagmi", "tailwind", "smart contract", "opbnb"],
     category: "web app",
-    github: "https://github.com/johnsmccain/coffeHtml",
-    webapp: "https://fervent-shockley-ccfe18.netlify.app/",
-     member: [
-
+    github: "https://github.com/johnsmccain/bland",
+    webapp: "https://bitland1.netlify.app/dashboard",
+    member: [
       {
         name: Bio.name,
         img: "https://avatars.githubusercontent.com/u/35366478?v=4",
         linkedin: Bio.linkedin,
         github: Bio.github,
-        twitter:Bio.twitter
+        twitter: Bio.twitter,
       },
-    ],
+    ]
   },
-   {
-    id: 8,
-    title: "Netflix Clone",
-    date: "Jan 2021",
-    description:
-      "A Netflix clone React app made with Imdb API. It uses react library to play the video. It also has a search bar to search for a particular video.",
-    image:
-      netlix,
-    tags: ["JavaScript", "API", "React", "Firebase", "Redux"],
-    category: "web app",
-    github: "https://github.com/johnsmccain/Netflix-clone/tree/master",
-    webapp: "https://netflix-repl.netlify.app/",
-     member: [
 
+  {
+    id: 15,
+    title: "StarkNet Service and Management",
+    date: "2025",
+    description: "StarkNet Service and Management is a dynamic platform designed to simplify the process of connecting service providers with consumers. It addresses common challenges such as finding reliable providers, assessing service quality, and managing bookings efficiently. By creating a centralized marketplace, the platform makes it easy for consumers to browse various services and select those that best meet their needs.",
+    image: "https://avatars.githubusercontent.com/u/202100983?s=48&v=4",
+    tags: ["React Js", "Node Js", "tailwind", "MongoDB", "Express", "API"],
+    category: "web app",
+    github: "https://github.com/Servora/servicemgtapp",
+    webapp: "https://starknet-service-and-management.netlify.app/",
+    member: [
       {
         name: Bio.name,
         img: "https://avatars.githubusercontent.com/u/35366478?v=4",
         linkedin: Bio.linkedin,
         github: Bio.github,
-        twitter:Bio.twitter
+        twitter: Bio.twitter,
       },
-    ],
+    ]
   },
+  {
+    id: 16,
+    title: "Starknet Quest Client",
+    date: "2025",
+    description: "Leading quests platform on Starknet to onboard your next million users. We provide a platform for users to discover new apps and for companies to pitch your products and new features to users and get user feedback.",
+    image: "https://starknet.quest/visuals/starknetquestLogo.svg",
+    tags: ["Next Js",, "tailwind", "API"],
+    category: "web app",
+    github: "https://github.com/lfglabs-dev/starknet.quest",
+    webapp: "https://starknet.quest/",
+    member: [
+      {
+        name: Bio.name,
+        img: "https://avatars.githubusercontent.com/u/35366478?v=4",
+        linkedin: Bio.linkedin,
+        github: Bio.github,
+        twitter: Bio.twitter,
+      },
+    ]
+  },
+  {
+    id: 17,
+    title: "Starknet.ID",
+    date: "2025",
+    description: "Starknet.ID is an identity provider on Starknet. The protocol allows you to create your Starknet Identity (that can be seen as your on-chain passport) and to attach things to it. You can already you can register .stark human-readable domains that will be used as your Starknet username.",
+    image: "https://starknet.id/_next/image?url=%2Fvisuals%2Fhome%2Ffooter-icon.webp&w=48&q=75",
+    tags: ["Next Js",, "tailwind", "API"],
+    category: "web app",
+    github: "https://github.com/lfglabs-dev/starknet.id",
+    webapp: "https://starknet.id/",
+    member: [
+      {
+        name: Bio.name,
+        img: "https://avatars.githubusercontent.com/u/35366478?v=4",
+        linkedin: Bio.linkedin,
+        github: Bio.github,
+        twitter: Bio.twitter,
+      },
+    ]
+  }
 ];
 
 // const links = {"https://landing-page-mobile-app.netlify.app/", "https://fervent-shockley-ccfe18.netlify.app/", "https://workable.netlify.app/", "https://assetsment2800.netlify.app/", "https://artgram-project.vercel.app/"}

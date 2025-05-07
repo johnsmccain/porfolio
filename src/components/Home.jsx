@@ -35,18 +35,21 @@ return (
         <Slide direction='right'>
 
         <div className="avatar">
+        <div className="card">
 
-            <Tilt>
-                <div className="card" >
+            <Tilt className="rounded" options={{ max: 25 }}>
+
                     <img src="/Johnsdanlami.jpg" alt="Johnsdanlami" />
+            </Tilt>
+            </div>
+                <div className="card" >
                     <div className="info">
                         <div>Developer</div>
                         <div>Nigeria</div>
                         <div>12/97</div>
                         <div>Male</div>
                     </div>
-                </div>
-            </Tilt>
+                </div>  
         </div>
         </Slide>
     </section>

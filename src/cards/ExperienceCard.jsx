@@ -98,13 +98,16 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       icon={
+        <div className="experience-icon">
         <img
           width="100%"
           height="100%"
+          loading="lazy"
           alt={experience.school}
           style={{ borderRadius: "50%", objectFit: "cover" }}
           src={experience.img}
-        />
+          />
+          </div>
       }
       contentStyle={{
         display: "flex",

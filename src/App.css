@@ -152,19 +152,27 @@ section.home {
       display: inline-flex;
       flex-direction: column;
       width: min(100%, 400px);
-      box-shadow: 0 150px 150px #e945e333;
+      /* box-shadow: 0 150px 150px #e945e333; */
       transition: 0.5s;
 
       &:hover {
         box-shadow: 0 150px 150px #e945e355;
       }
 
-      & img {
-        width: 100%;
-        height: min(50vh, 700px);
-        object-fit: cover;
-        object-position: top;
-        clip-path: polygon(81% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
+      
+      .rounded {
+        border-radius: 100%;
+        box-shadow: 0 150px 150px #e945e355;
+        inset: 20px;
+      
+        & img {
+          width: 100%;
+          height: min(50vh, 700px);
+          object-fit: cover;
+          object-position: top;
+          /* clip-path: polygon(81% 0, 100% 18%, 100% 100%, 0 100%, 0 0); */
+          border-radius: 100%;
+        }
       }
 
       & .info {
@@ -243,6 +251,17 @@ section.skills {
       }
     }
   }
+}
+
+.experience-icon{
+  padding: 5px;
+  /* background: #fff; */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section.projects {

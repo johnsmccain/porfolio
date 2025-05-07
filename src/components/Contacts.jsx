@@ -70,7 +70,6 @@ const Footer = () => {
     const templateId = import.meta.env.VITE_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
-    console.log(serviceId, templateId, publicKey)
 
     const templateParams = {
       from_name: name,

@@ -51,7 +51,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack, BsWhatsapp } from "react-icons/bs";
+import { BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 import { WhatsApp } from "@mui/icons-material";
@@ -66,9 +66,11 @@ const Footer = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const serviceId = "service_dwukfsr";
-    const templateId = "template_ujxp5sn";
-    const publicKey = "user_dGg7G0iKobFpP0TjmdwTZ";
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+    console.log(serviceId, templateId, publicKey)
 
     const templateParams = {
       from_name: name,

@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap"
 import { useRef } from "react"
 
-interface fontTypes {
+interface FontTypes {
     subtitle: {
         min: number;
         max: number;
@@ -15,10 +15,11 @@ interface fontTypes {
     };
 }
 
-const FONT_WEIGHTS = {
+const FONT_WEIGHTS: FontTypes = {
     subtitle: { min: 100, max: 400, default: 100 },
     title: { min: 400, max: 900, default: 400 }
 }
+
 const renderText = (text: string, className: string, baseWeight = 400) => {
     return [...text].map((char, i) => (
         <span key={i} className={className}
@@ -29,17 +30,17 @@ const renderText = (text: string, className: string, baseWeight = 400) => {
     ))
 }
 
-const setUpTextHover = (container:any, type: any) => {
+const setUpTextHover = (container: HTMLElement | null, type: keyof FontTypes) => {
     if (!container) return;
 
     const letters = container.querySelectorAll("span");
-    const { min, max, default: base } = FONT_WEIGHTS[type as keyof fontTypes];
+    const { min, max, default: base } = FONT_WEIGHTS[type];
 
-    const animateLetter = (letter: string, weight: number, duration: number = 0.25) => {
+    const animateLetter = (letter: Element, weight: number, duration: number = 0.25) => {
         return gsap.to(letter, {
             duration,
             ease: "power3.out",
-            fontVariantionSettings: `'wght' ${weight}'`
+            fontVariationSettings: `'wght' ${weight}`
         })
     }
 
@@ -47,7 +48,7 @@ const setUpTextHover = (container:any, type: any) => {
         const { left } = container.getBoundingClientRect();
         const mouseX = e.clientX - left;
 
-        letters.array.forEach((letter: any) => {
+        Array.from(letters).forEach((letter) => {
             const { left: letterLeft, width: letterWidth } = letter.getBoundingClientRect();
             const distance = Math.abs(mouseX - (letterLeft - left + letterWidth / 2));
             const intensity = Math.exp(-(distance ** 2) / 2000);
@@ -57,10 +58,11 @@ const setUpTextHover = (container:any, type: any) => {
     }
 
     const handleMouseLeave = () => {
-        letters.array.forEach((letter: any) => {
+        Array.from(letters).forEach((letter) => {
             animateLetter(letter, base, 0.3);
         });
     }
+    
     container.addEventListener("mouseleave", handleMouseLeave);
     container.addEventListener("mousemove", handleMouseMove);
 
@@ -69,23 +71,24 @@ const setUpTextHover = (container:any, type: any) => {
         container.removeEventListener("mousemove", handleMouseMove);
     };
 }
+
 const Welcome = () => {
     const titleRef = useRef<HTMLDivElement>(null);
-    const subtileRef = useRef<HTMLDivElement>(null);
+    const subtitleRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        const tiltleCleanUp = setUpTextHover(subtileRef.current, "subtitle");
-        const setUTextHoverCleanUp = setUpTextHover(titleRef.current, "title");
+        const titleCleanUp = setUpTextHover(subtitleRef.current, "subtitle");
+        const subtitleCleanUp = setUpTextHover(titleRef.current, "title");
 
         return () => {
-            tiltleCleanUp && tiltleCleanUp();
-            setUTextHoverCleanUp && setUTextHoverCleanUp();
+            titleCleanUp?.();
+            subtitleCleanUp?.();
         }   
     }, []);
     
     return (
         <section id="welcome">
-            <p ref={subtileRef}>
+            <p ref={subtitleRef}>
                 {renderText("Hey, I'm John! Welcome to my", "text-3xl font-georama", 100)}
             </p>
             <h1 ref={titleRef} className="mt-7">

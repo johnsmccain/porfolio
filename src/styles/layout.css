@@ -5,3 +5,30 @@
 html, body, #root {
   @apply h-full overflow-hidden;
 }
+
+/* Mobile responsive layout */
+@media (max-width: 640px) {
+  html, body, #root {
+    @apply overflow-auto;
+  }
+  
+  .desktop {
+    @apply min-h-screen;
+  }
+  
+  .window {
+    @apply !fixed !inset-0 !w-full !h-full !max-w-none !max-h-none !rounded-none;
+  }
+  
+  .app-window {
+    @apply !w-full !h-full !max-w-none !max-h-none !top-0 !left-0 !rounded-none;
+  }
+  
+  .topbar {
+    @apply px-4 py-2 text-sm;
+  }
+  
+  .menu {
+    @apply !w-full !max-w-none !left-0 !right-0;
+  }
+}

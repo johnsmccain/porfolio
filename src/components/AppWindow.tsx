@@ -106,9 +106,10 @@ const TrafficLights = ({ id, close, aspectRatio, max, setMax, setMin }: TrafficP
 const Window = (props: WindowProps) => {
   const dockSize = useStore((state) => state.dockSize);
   const { winWidth, winHeight } = useWindowSize();
+  const isMobile = winWidth < 640;
 
-  const initWidth = Math.min(winWidth, props.width || 640);
-  const initHeight = Math.min(winHeight, props.height || 400);
+  const initWidth = isMobile ? winWidth : Math.min(winWidth, props.width || 640);
+  const initHeight = isMobile ? winHeight : Math.min(winHeight, props.height || 400);
 
   const [state, setState] = useState<WindowState>({
     width: initWidth,
@@ -127,14 +128,14 @@ const Window = (props: WindowProps) => {
     });
   }, [winWidth, winHeight]);
 
-  const round = props.max ? "rounded-none" : "rounded-lg";
+  const round = (props.max || isMobile) ? "rounded-none" : "rounded-lg";
   const minimized = props.min
     ? "opacity-0 invisible transition-opacity duration-300"
     : "";
-  const border = props.max ? "" : "border border-gray-500/30";
-  const width = props.max ? winWidth : state.width;
-  const height = props.max ? winHeight : state.height;
-  const disableMax = props.aspectRatio !== undefined;
+  const border = (props.max || isMobile) ? "" : "border border-gray-500/30";
+  const width = (props.max || isMobile) ? winWidth : state.width;
+  const height = (props.max || isMobile) ? winHeight : state.height;
+  const disableMax = props.aspectRatio !== undefined || isMobile;
 
   const children = React.cloneElement(props.children as React.ReactElement, {
     width: width
@@ -148,7 +149,7 @@ const Window = (props: WindowProps) => {
         height: height
       }}
       position={{
-        x: props.max
+        x: (props.max || isMobile)
           ? winWidth // because of boundary
           : Math.min(
               // "winWidth * 2" because of the boundary for windows
@@ -159,7 +160,7 @@ const Window = (props: WindowProps) => {
                 state.x
               )
             ),
-        y: props.max
+        y: (props.max || isMobile)
           ? -minMarginY // because of boundary
           : Math.min(
               // "- minMarginY" because of the boundary for windows
@@ -181,8 +182,8 @@ const Window = (props: WindowProps) => {
       minWidth={props.minWidth ? props.minWidth : 200}
       minHeight={props.minHeight ? props.minHeight : 150}
       dragHandleClassName="window-bar"
-      disableDragging={props.max}
-      enableResizing={!props.max}
+      disableDragging={props.max || isMobile}
+      enableResizing={!props.max && !isMobile}
       lockAspectRatio={props.aspectRatio}
       lockAspectRatioExtraHeight={props.aspectRatio ? appBarHeight : undefined}
       style={{ zIndex: props.z }}

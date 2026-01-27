@@ -164,9 +164,9 @@ const TopBar = (props: TopBarProps) => {
 
   return (
     <div
-      className={`w-full h-8 px-2 fixed top-0 hstack justify-between ${
+      className={`w-full h-8 sm:h-8 h-12 px-2 fixed top-0 hstack justify-between ${
         props.hide ? "z-0" : "z-20"
-      } text-sm text-black dark:text-white bg-gray-700/10 backdrop-blur-2xl shadow transition`}
+      } text-xs sm:text-sm text-black dark:text-white bg-gray-700/10 backdrop-blur-2xl shadow transition`}
     >
       <div className="hstack space-x-1">
         <TopBarItem

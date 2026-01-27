@@ -32,22 +32,26 @@ export default function Dock({
   };
 
   const mouseX = useMotionValue<number | null>(null);
+  const isMobile = window.innerWidth < 640;
+  const displayedApps = isMobile ? apps.slice(0, 4) : apps;
 
   return (
     <div
-      className={`dock fixed bottom-1 left-1/2 transform -translate-x-1/2 ${hide ? "z-0" : "z-50"}`}
-      w="max"
+      className={`dock fixed bottom-0 left-0 right-0 ${hide ? "z-0" : "z-50"} 
+        sm:bottom-1 sm:left-1/2 sm:right-auto sm:transform sm:-translate-x-1/2`}
+      w="full sm:max"
     >
       <ul
-        className="flex justify-center space-x-2 px-2 backdrop-blur-2xl bg-c-white/20"
+        className="flex justify-center space-x-1 sm:space-x-2 px-2 sm:px-2 py-2 sm:py-0 
+          backdrop-blur-2xl bg-c-white/20 h-16 sm:h-auto"
         border="~ c-400/40 rounded-none sm:rounded-xl"
         onMouseMove={(e) => mouseX.set(e.nativeEvent.x)}
         onMouseLeave={() => mouseX.set(null)}
         style={{
-          height: `${(dockSize + 15) / 16}rem`
+          height: window.innerWidth < 640 ? '4rem' : `${(dockSize + 15) / 16}rem`
         }}
       >
-        {apps.map((app) => (
+        {displayedApps.map((app) => (
           <DockItem
             key={`dock-${app.id}`}
             id={app.id}

@@ -1,22 +1,23 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import {resolve, dirname} from 'path';
-import {fileURLToPath} from 'url';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import unocss from "unocss/vite";
+import autoImport from "unplugin-auto-import/vite";
+import path from "path";
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    tailwindcss(),
-    react({
-      babel: {
-        plugins: [['babel-plugin-react-compiler']],
-      },
-    }),
+    unocss(),
+    react(),
+    autoImport({
+      imports: ["react"],
+      dts: "src/auto-imports.d.ts",
+      dirs: ["src/hooks", "src/stores", "src/components/**"]
+    })
   ],
   resolve: {
     alias: {
-      '@': resolve(dirname(fileURLToPath(import.meta.url)), 'src'),
-    },
-  },
-})
+      "~/": `${path.resolve(__dirname, "src")}/`
+    }
+  }
+});

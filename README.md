@@ -1,41 +1,65 @@
-# macos-portfolio
+# John Danlami's Portfolio
 
-My portfolio website simulating macOS's GUI: https://aakash-sharma.vercel.app
+A modern portfolio website built with React, TypeScript, and Vite, featuring a macOS-inspired interface.
 
-Powered by [React](https://reactjs.org/) + [Zustand](https://zustand-demo.pmnd.rs/) + [UnoCSS](https://uno.antfu.me/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/).
+🌐 **Live Demo**: [johnsdanlami.netlify.app](https://johnsdanlami.netlify.app)
 
-&nbsp;
+## Features
 
-# Screenshots
-![light mode](./public/screenshots/light.png) ![dark mode](./public/screenshots/dark.png)
-&nbsp;
+- 🖥️ macOS-style interface with dock and window management
+- 🎨 Interactive GSAP animations
+- 📱 Responsive design with Tailwind CSS
+- ⚡ Fast performance with Vite
+- 🔧 TypeScript for type safety
+- 🎵 Audio integration
+- 🌙 Dark/Light theme support
 
-## Usage
+## Tech Stack
 
-Clone the repo and install dependencies:
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS, UnoCSS
+- **Animations**: GSAP
+- **State Management**: Zustand
+- **Build Tool**: Vite
+- **Deployment**: Netlify
+
+## Quick Start
 
 ```bash
-pnpm install
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-Start dev server (with hot reloading):
+## Scripts
 
-```bash
-pnpm dev
-```
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
-Build for production with minification to the `dist` folder:
+## License
 
-```bash
-pnpm build
-```
-&nbsp;
+MIT License - feel free to use this project as inspiration for your own portfolio!
+
+---
 
 ## Credits
 
 - macOS
   - [Monterey](https://www.apple.com/macos/monterey/)
   - [Catalina](https://www.apple.com/bw/macos/catalina/)
+  - https://aakash-sharma.vercel.app
 
 &nbsp;
+
+**Built with ❤️ by John Danlami**
 

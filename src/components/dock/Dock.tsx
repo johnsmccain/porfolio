@@ -35,9 +35,8 @@ export default function Dock({
 
   return (
     <div
-      className={`dock fixed inset-x-0  mx-2 mx-auto bottom-1 ${hide ? "z-0" : "z-50"}`}
-      w="full sm:max"
-      overflow="x-scroll sm:x-visible"
+      className={`dock fixed bottom-1 left-1/2 transform -translate-x-1/2 ${hide ? "z-0" : "z-50"}`}
+      w="max"
     >
       <ul
         className="flex justify-center space-x-2 px-2 backdrop-blur-2xl bg-c-white/20"

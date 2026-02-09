@@ -1,10 +1,7 @@
 # GitHub Stats
 
-## My GitHub Journey
+<!-- ## My GitHub Journey -->
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=johnsmccain&show_icons=true&theme=dark&hide_border=true)](https://github.com/johnsmccain)
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=johnsmccain&layout=compact&theme=dark&hide_border=true)](https://github.com/johnsmccain)
 
 ### Profile Overview
 - **Username**: johnsmccain

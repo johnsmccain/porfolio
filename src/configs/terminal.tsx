@@ -13,8 +13,7 @@ const terminal: TerminalData[] = [
         content: (
           <div className="py-1">
             <div>
-              Hi, this is Akash. I am a Btech student at the Computer Science and
-              Engineering department of MBM University.
+              Hi, this is John Danlami. I am a Computer Science student at the University of the People.
             </div>
           </div>
         )
@@ -42,51 +41,51 @@ const terminal: TerminalData[] = [
               Email:{" "}
               <a
                 className="text-blue-300"
-                href="mailto:aakash6263264@gmail.com"
+                href="mailto:johnsdanlami@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                aakash6263264@gmail.com
+                johnsdanlami@gmail.com
               </a>
             </li>
             <li>
               Github:{" "}
               <a
                 className="text-blue-300"
-                href="https://github.com/aakashsharma003"
+                href="https://github.com/johnsmccain"
                 target="_blank"
                 rel="noreferrer"
               >
-                @aakashsharma
+                @johnsmccain
               </a>
             </li>
             <li>
               Linkedin:{" "}
               <a
                 className="text-blue-300"
-                href="https://www.linkedin.com/in/aakashsharma003"
+                href="https://www.linkedin.com/in/john-danlami-b5a745154/"
                 target="_blank"
                 rel="noreferrer"
               >
-                akash-sharma
+                John-Danlami
               </a>
             </li>
             <li>
               Personal Website:{" "}
               <a
                 className="text-blue-300"
-                href="https://aakash-sharma.vercel.app"
+                href="https://johnsdanlami.netlify.app"
                 target="_blank"
                 rel="noreferrer"
               >
-                https://aakash-sharma.vercel.app
+                https://johnsdanlami.netlify.app
               </a>
             </li>
             <li>
               X:{" "}
               <a
                 className="text-blue-300"
-                href="https://x.com/aakashsharma003"
+                href="https://x.com/johnsdanlami"
                 target="_blank"
                 rel="noreferrer"
               >
